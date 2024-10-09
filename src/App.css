@@ -1,38 +1,107 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  justify-content: center;
+  width: 320px;
+  background-color: #1a1b21;
+  border-radius: .8rem;
+  overflow: hidden;
+  color: white;
+  border: 1px solid #1a1b21;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-container{
+  width: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-img{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: 50% 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-img:hover{
+  opacity: 0.3;
+  transition: ease 3s;
+  transform: scale(1.01);
+}
+
+.sub-containere{
+  padding: 0 1.5rem;
+}
+
+.red{
+  color: red;
+}
+
+.connect{
+  padding: 1rem 0;
   display: flex;
-  flex-direction: column;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+a{
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email, .linkedin{
   color: white;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .4rem 1.75rem;
+  gap: .5rem;
+  border-radius: .35rem;
 }
 
-.App-link {
-  color: #61dafb;
+.linkedin{
+  color: red;
+  background-color: lightblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about, .interests{
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.about h3, .interests h3{
+margin-bottom: .4rem;
+} 
+.about p{
+margin-bottom: .4rem;
+}
+.interests p{
+  margin-bottom: 2rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #161619;
+  padding: 1.2rem 0;
+}
+
+.icons{
+  width: 35px;
+}
+
+.icons:hover{
+  transform: scale(1.1);
 }
